@@ -71,8 +71,22 @@ Class for container HTML tags. It can contain sub elements. HTMLContainer is clo
 - getLastChild() : return the last sub element. Null if there is no element.
 - removeAllChilds() : remove all sub elements.
 
-- addRawText($text) : inserts raw text sub element. The raw text can be inserted between two other sub elements. Example : <a><b/>sub raw text<c></c></a>
+- addRawText($text) : inserts raw text sub element. The raw text can be inserted between two other sub elements. Example <a><b/>sub raw text<c></c></a>
 - setInnerHTML($text) : replace all previously set content (sub elements) by the raw text $text.
 - setText($text) : alias for setInnerHTML
 
 - isScalar() : returns false
+
+### HTMLGenerator.container.php
+Container subclasses set. Contains several basic HTML containers.
+
+#### HTMLGenerator.container.php classes
+
+##### HTMLDiv
+The div tag. <div></div>
+
+##### HTMLSpan
+The span tag. <span></span>
+
+##### HTMLForm
+The form tag. <form></form>
