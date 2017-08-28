@@ -90,3 +90,50 @@ The span tag. <span></span>
 
 ##### HTMLForm
 The form tag. <form></form>
+
+### HTMLGenerator.inputs.php
+Inputs subclasses set. Contains several basic HTML inputs, used in HTML forms.
+
+#### HTMLGenerator.inputs.php classes
+
+##### HTMLInput
+Mother class of all inputs tag. <input/>
+
+###### Methods
+- getType() : returns the value of the attribute 'type'. Returns null if not existing.
+- setType($type) : set the value of the attribute 'type'.
+
+##### HTMLInputText
+HTML input text tag. <input type="text"/>
+
+##### HTMLInputReset
+HTML input reset tag. <input type="reset"/>
+
+##### HTMLInputCheckable
+Abstract class for checkable inputs.
+
+###### Methods
+- check() : add the 'checked' attribute
+- uncheck() : remove the 'checked' attribute
+- toggle() : change the 'checked' attribute state. Check if previously unchecked. Uncheck if previously checked.
+
+##### HTMLInputRadio
+HTML radio input. Checkable. <input type="radio"/>
+
+##### HTMLInputCheckbox
+HTML checkbox input. Checkable. <input type="checkbox"/>
+
+##### HTMLOption
+HTML option. <option value="value">value</option>
+
+##### HTMLSelect
+HTML select. <select><option value="value">value</option></select>
+
+###### Methods
+- addOption($value, $text, $selected=false, $attributes=array()) : add sub option.
+
+##### HTMLLabel
+HTML label. <label for="id">text</label>
+
+
+
